@@ -13,10 +13,7 @@ app.use (
         cookie: {}
     })
 );
-app.get('/', (req, res) => {
-    res.send(`Hello from my node app, it is your first time here ! Welcome :)`);
 
-});
 app.get('/', function(req, res, next) {
 
     if (req.session.views) {
